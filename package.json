@@ -4,6 +4,9 @@
   "description": "## About This is a todo web application. It keeps track of chores you need to do and have already done. The purpose for building this web application was to learn about using the Cypress end-to-end testing framework.",
   "main": "index.js",
   "scripts": {
+    "start": "my-server -p 5000",
+    "cy:run": "cypress run",
+    "test": "start-server-and-test start http://localhost:5000 cy:run",
     "start": "node server.js",
     "start:dev": "nodemon --ignore 'todo.json' server.js",
     "test:headless": "cypress run",

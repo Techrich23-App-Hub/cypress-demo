@@ -13,7 +13,7 @@ frontend:
       files:
        - '**/*.png'
        - '**/*.mp4'
- test:
+  test:
       commands:
         - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
   postTest:

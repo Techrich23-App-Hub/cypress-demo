@@ -21,7 +21,7 @@ frontend:
     commands:
         - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > cypress/report/mochawesome.json
         - pm2 kill
-    artifacts:
+  artifacts:
     baseDirectory: cypress
     configFilePath: '**/mochawesome.json'
     files:

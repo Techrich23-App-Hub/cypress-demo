@@ -1,7 +1,6 @@
-test:
  frontend:
   phases:
-    preTest:
+    preBuild:
       commands:
         - npm ci
         - npm install -g pm2

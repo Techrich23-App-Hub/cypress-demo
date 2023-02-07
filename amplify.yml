@@ -15,13 +15,13 @@ frontend:
     paths:
       - node_modules/**/*
   test:
-      commands:
+    commands:
         - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
   postTest:
-      commands:
+    commands:
         - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > cypress/report/mochawesome.json
         - pm2 kill
-  artifacts:
+    artifacts:
     baseDirectory: cypress
     configFilePath: '**/mochawesome.json'
     files:

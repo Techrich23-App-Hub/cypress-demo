@@ -1,7 +1,7 @@
 {
     "public": "app",
     "headers": [{
-      "source": "**/*",
+      "source": "**/mochawesome.json",
       "headers": [{
         "key": "Cache-Control",
         "value": "no-cache"

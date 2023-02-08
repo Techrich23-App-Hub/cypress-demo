@@ -10,7 +10,7 @@ frontend:
   artifacts:
     baseDirectory: app
     files:
-      - "**/mochawesome.json"
+      - "**/*"
   cache:
     paths:
       - node_modules/**/*

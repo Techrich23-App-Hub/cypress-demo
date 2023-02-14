@@ -8,7 +8,7 @@ frontend:
       commands:
         - npm run 
   artifacts:
-    baseDirectory: cypress
+    baseDirectory: app
     files:
       - "**/*"
   cache:
